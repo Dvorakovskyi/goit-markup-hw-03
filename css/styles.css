@@ -47,7 +47,6 @@ img {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: solid 1px red;
 }
 
 /* Прихований заголовок */
@@ -70,6 +69,9 @@ body {
 }
 
 /* Header */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -84,7 +86,17 @@ body {
   color: var(--header-logo-color);
 }
 
+.nav-list {
+  display: flex;
+  text-align: center;
+  gap: 50px;
+}
+
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -97,11 +109,21 @@ body {
   color: var(--hover-color);
 }
 
+.header-contact {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  gap: 50px;
+}
+
 .current {
   color: var(--hover-color);
 }
 
 .contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -113,8 +135,20 @@ body {
 .contact-link:focus {
   color: var(--hover-color);
 }
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header-discription {
+  margin-right: 93px;
+}
+
 /* Hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--secondery-background-color);
 }
@@ -122,6 +156,8 @@ body {
 .hero-title {
   margin-bottom: 30px;
   width: 696px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -152,6 +188,7 @@ body {
 .hero-btn:focus {
   background-color: #188ce8;
 }
+
 /* Benefits */
 .benefits-title {
   margin-bottom: 10px;
@@ -165,9 +202,18 @@ body {
   color: var(--paragraphs-color);
 }
 
-.benefits-text {
-  width: 270px;
+.benefits-list {
+  display: flex;
+}
 
+.benefits-item {
+  flex-basis: calc((100%-90px) / 4);
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -175,6 +221,10 @@ body {
   color: var(--text-color);
 }
 /* Work */
+.work {
+  padding-top: 0;
+}
+
 .work-title {
   margin-bottom: 50px;
 
@@ -186,17 +236,37 @@ body {
 
   color: var(--paragraphs-color);
 }
+
+.work-list {
+  display: flex;
+}
+
+.work-item {
+  flex-basis: calc((100%-60px) / 3);
+}
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Team */
 .team {
   background-color: var(--team-background-color);
 }
 
-.team-item {  
-  width: 270px;
+.team-list {
+  display: flex;
+}
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.team-item {
+  flex-basis: calc((100%-90px) / 4);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-background-color);
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-title {
@@ -220,7 +290,7 @@ body {
 
 .text-title {
   margin-bottom: 10px;
-  
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -260,7 +330,7 @@ body {
 
 .google-map {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 
   color: var(--main-background-color);
@@ -276,7 +346,7 @@ body {
 
 .footer-link {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 
   color: var(--footer-contact-color);
@@ -285,8 +355,21 @@ body {
 .footer-link:focus {
   background-color: var(--hover-color);
 }
+/* Portfolio */
+.portfolio-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 /* Portfolio-btn */
 .portfolio-btn {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -304,7 +387,28 @@ body {
   background-color: var(--hover-color);
 }
 /* Filtr-title */
+.portfolio-div {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.filtr-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filtr-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.filtr-item:not(:nth-child(n + 7)) {
+  margin-bottom: 30px;
+}
+
 .filtr-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
