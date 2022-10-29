@@ -1,0 +1,249 @@
+:root {
+  --main-background-color: #ffffff;
+  --secondery-background-color: #2f303a;
+  --hover-color: #2196f3;
+  --paragraphs-color: #212121;
+  --text-color: #757575;
+  --header-logo-color: #000000;
+  --team-background-color: #f5f4fa;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --portfolio-button-background-color: #f5f4fa;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* Прихований заголовок */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  background-color: var(--main-background-color);
+}
+
+/* Header */
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--hover-color);
+}
+
+.header-logo {
+  color: var(--header-logo-color);
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--paragraphs-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--hover-color);
+}
+
+.current {
+  color: var(--hover-color);
+}
+
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--hover-color);
+}
+/* Hero */
+.hero {
+  background-color: var(--secondery-background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--main-background-color);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-style: none;
+  cursor: pointer;
+
+  color: var(--main-background-color);
+  background-color: var(--hover-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
+/* Benefits */
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--paragraphs-color);
+}
+
+.benefits-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+}
+/* Work */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--paragraphs-color);
+}
+/* Team */
+.team {
+  background-color: var(--team-background-color);
+}
+
+.team-item {
+  background-color: var(--main-background-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--paragraphs-color);
+}
+
+.text-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--paragraphs-color);
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+}
+/* Footer */
+.footer {
+  background-color: var(--secondery-background-color);
+}
+
+.footer-logo {
+  color: var(--main-background-color);
+}
+
+.footer-list {
+  font-style: normal;
+}
+
+.google-map {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--main-background-color);
+}
+.google-map:hover,
+.google-map:focus {
+  background-color: var(--hover-color);
+}
+
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--footer-contact-color);
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--hover-color);
+}
+/* Portfolio-btn */
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  border-style: none;
+  cursor: pointer;
+
+  color: var(--paragraphs-color);
+  background-color: var(--portfolio-button-background-color);
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--main-background-color);
+  background-color: var(--hover-color);
+}
+/* Filtr-title */
+.filtr-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--paragraphs-color);
+}
+
+.filtr-text {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+}
