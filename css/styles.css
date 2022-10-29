@@ -9,12 +9,47 @@
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --portfolio-button-background-color: #f5f4fa;
 }
+/* Reset */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 .link {
   text-decoration: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: solid 1px red;
+}
+
 /* Прихований заголовок */
 .visually-hidden {
   position: absolute;
@@ -80,14 +115,17 @@ body {
 }
 /* Hero */
 .hero {
+  text-align: center;
   background-color: var(--secondery-background-color);
 }
 
 .hero-title {
+  margin-bottom: 30px;
+  width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -95,13 +133,14 @@ body {
 }
 
 .hero-btn {
+  border-radius: 4px;
+  padding: 10px 32px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   border-style: none;
   cursor: pointer;
@@ -115,6 +154,8 @@ body {
 }
 /* Benefits */
 .benefits-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -125,6 +166,8 @@ body {
 }
 
 .benefits-text {
+  width: 270px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -133,6 +176,8 @@ body {
 }
 /* Work */
 .work-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -146,11 +191,17 @@ body {
   background-color: var(--team-background-color);
 }
 
-.team-item {
+.team-item {  
+  width: 270px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--main-background-color);
 }
 
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -160,7 +211,16 @@ body {
   color: var(--paragraphs-color);
 }
 
+.text-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+}
+
 .text-title {
+  margin-bottom: 10px;
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -185,6 +245,15 @@ body {
   color: var(--main-background-color);
 }
 
+.footer-pagging {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.description-logo {
+  margin-bottom: 20px;
+}
+
 .footer-list {
   font-style: normal;
 }
@@ -199,6 +268,10 @@ body {
 .google-map:hover,
 .google-map:focus {
   background-color: var(--hover-color);
+}
+
+.map {
+  margin-bottom: 9px;
 }
 
 .footer-link {
