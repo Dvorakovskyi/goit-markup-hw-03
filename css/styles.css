@@ -73,6 +73,9 @@ body {
   border-bottom: 1px solid #ececec;
 }
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -207,7 +210,7 @@ body {
 }
 
 .benefits-item {
-  flex-basis: calc((100%-90px) / 4);
+  flex-basis: calc((100%-3*30px) / 4);
 }
 .benefits-item:not(:last-child) {
   margin-right: 30px;
@@ -242,7 +245,7 @@ body {
 }
 
 .work-item {
-  flex-basis: calc((100%-60px) / 3);
+  flex-basis: calc((100%-2*30px) / 3);
 }
 .work-item:not(:last-child) {
   margin-right: 30px;
@@ -258,7 +261,7 @@ body {
 }
 
 .team-item {
-  flex-basis: calc((100%-90px) / 4);
+  flex-basis: calc((100%-3*30px) / 4);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -308,16 +311,14 @@ body {
 }
 /* Footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--secondery-background-color);
 }
 
 .footer-logo {
   color: var(--main-background-color);
-}
-
-.footer-pagging {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .description-logo {
@@ -337,7 +338,7 @@ body {
 }
 .google-map:hover,
 .google-map:focus {
-  background-color: var(--hover-color);
+  color: var(--hover-color);
 }
 
 .map {
@@ -353,7 +354,7 @@ body {
 }
 .footer-link:hover,
 .footer-link:focus {
-  background-color: var(--hover-color);
+  color: var(--hover-color);
 }
 /* Portfolio */
 .portfolio-list {
@@ -365,8 +366,6 @@ body {
 
 /* Portfolio-btn */
 .portfolio-btn {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 6px 22px;
 
